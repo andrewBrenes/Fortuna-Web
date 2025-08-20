@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plantilla.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menu" id="menuBtn">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+        <div class="title">Adventure Fortuna</div>
+    </div>
+    <div class="detalle-casa">
+        <!-- Imagen principal -->
+        <div class="imagen-principal">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6f/ab/6c/estos-son-nuestros-master.jpg?w=800&h=500&s=1" alt="Casa principal">
+        </div>
+
+        <!-- Título y ubicación -->
+        <div class="info-casa">
+            <h2>Villa Los Carillo</h2>
+            <p class="ubicacion">📍 La Fortuna, San Carlos</p>
+        </div>
+
+        <!-- Ficha de características -->
+        <hr>
+        <div class="caracteristicas-casa">
+            <div>🛏 3 Habitaciones</div>
+            <div>🚿 2 Baños</div>
+            <div>🌋 Vista al volcán</div>
+            <div>📶 Wi-Fi incluido</div>
+        </div>
+        <hr>
+
+        <!-- Descripción -->
+        <div class="descripcion-casa">
+            <p>
+            Esta encantadora casa, ubicada en medio del bosque tropical de La Fortuna, es perfecta para quienes buscan tranquilidad y aventura. Ideal para familias o grupos pequeños.
+            </p>
+            <div class="btn-azul"><button>Ver Calendario</button></div>
+        </div>
+        <!-- MENÚ LATERAL-->
+        <nav class="side-nav" id="sideNav">
+            <a href="index.html">Principal</a>
+            <a href="inicio.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    <div class="div-carrusel">
+            <div class="carrusel-container">
+                <button class="carrusel-btn left" onclick="moverCarrusel(-1)">‹</button>
+                
+                <div class="carrusel" id="carrusel">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6f/ab/6c/estos-son-nuestros-master.jpg?w=800&h=500&s=1" alt="Foto 1">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6f/ab/6c/estos-son-nuestros-master.jpg?w=800&h=500&s=1" alt="Foto 2">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6f/ab/6c/estos-son-nuestros-master.jpg?w=800&h=500&s=1" alt="Foto 3">
+                    <!-- Puedes agregar más imágenes -->
+                </div>
+                
+                <button class="carrusel-btn right" onclick="moverCarrusel(1)">›</button>
+            </div>
+        
+
+        <!-- Botón de acción -->
+        <div class="boton-reserva">
+            <button>Reservar ahora</button>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-info">
+        <h2>Adventure La Fortuna</h2>
+        <p><i class="fa-solid fa-location-dot"></i> La Fortuna, San Carlos</p>
+        <p><i class="fa-solid fa-phone"></i> +506 XXXX-XXXX</p>
+        <p><i class="fa-solid fa-envelope"></i> info@ejemploFortuna.com</p>
+        </div>
+
+        <div class="footer-links">
+        <h3>Enlaces</h3>
+        <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-social">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="#"><img src="imgs/application_15077083.png" alt=""></a>
+                <a href="#"><img src="imgs/facebook_3488299.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <hr>
+        <p>© 2025 Adventure La Fortuna. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="plantilla.js"></script>
+</body>
+</html>

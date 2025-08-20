@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Playfair Display, Lora, Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menu" id="menuBtn">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+            <div class="title">Adventure Fortuna</div>
+        </div>
+        <!-- BARRA DE BÚSQUEDA -->
+        
+        <div class="search-container">
+        <input type="text" class="search-input" placeholder="Buscar aventuras, lugares, actividades...">
+        </div>
+
+        <!-- FILTROS DESPLEGABLES -->
+        <div class="filter-section">
+            <div class="filter-row">
+                <div class="filter-box">
+                    <button class="filter-toggle" onclick="toggleFilter('precio')">Precio</button>
+                    <div class="filter-options" id="precio">
+                        <label><input type="checkbox">$25-$50</label>
+                        <label><input type="checkbox">$50-$75</label>
+                        <label><input type="checkbox">$75-$100</label>
+                    </div>
+                </div>
+
+                <div class="filter-box">
+                    <button class="filter-toggle" onclick="toggleFilter('personas')">Personas</button>
+                    <div class="filter-options" id="personas">
+                        <label><input type="checkbox">1-4</label>
+                        <label><input type="checkbox">4-6</label>
+                        <label><input type="checkbox">6-10</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENÚ LATERAL-->
+        <nav class="side-nav" id="sideNav">
+            <a href="index.html">Principal</a>
+            <a href="inicio.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="cards">
+            <div class="card vertical-card">
+                <div class="card-img">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6f/ab/6c/estos-son-nuestros-master.jpg?w=800&h=500&s=1" alt="Villa Los Carrillo" />
+                </div>
+                <div class="card-info">
+                    <div class="card-title">Villa Los Carrillo</div>
+                    <div class="card-details">Max. 7 Personas</div>
+                    <div class="card-price">$30  p/Noche</div>
+                </div>
+            </div>
+            <div class="card vertical-card">
+                <div class="card-img">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/603650577.jpg?k=ec400f756ad870a6a9015825665fa9e59a29f5f0e77c4c7886429621ce2ee3fa&o=" alt="Villa Los Palacios" />
+                </div>
+                <div class="card-info">
+                    <div class="card-title">Villa Los Palacios</div>
+                    <div class="card-details">Max. 10 Personas</div>
+                    <div class="card-price">$50  p/Noche</div>
+                </div>
+                
+            </div>
+            <div class="card vertical-card">
+                <div class="card-img">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/aa/04/32/caption.jpg?w=900&h=500&s=1" alt="Villa El Paraíso" />
+                </div>
+                <div class="card-info">
+                    <div class="card-title">Villa El Paraíso</div>
+                    <div class="card-details">Max. 8 Personas</div>
+                    <div class="card-price">$40  p/Noche</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>
