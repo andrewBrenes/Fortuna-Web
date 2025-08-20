@@ -1,2 +1,2 @@
 # Fortuna-Web
-This is a webpage is designed to help tourists find the best options for lodging easily. Instead of searching through a lot of different websites or AirBnbs, this website offers a single platform that brings everything together in one place. 
+Basically, I started making the design of it. I worked having a mobile-first design, so that´s why there are a lot of media querries. I have not started with the logistic part yet.
